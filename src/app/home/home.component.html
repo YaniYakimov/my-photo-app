@@ -1,0 +1,28 @@
+<!-- Navigation bar with home icon on the left and links on the right -->
+<nav class="navbar">
+    <div class="navbar-left">
+      <a href="#" class="home-icon">
+        <img src="assets/home-icon.png" alt="Home" width="30" />
+      </a>
+    </div>
+    <div class="navbar-right">
+      <a href="#">Portfolio</a>
+      <a href="#">About</a>
+      <a href="#">Log In</a>
+    </div>
+  </nav>
+
+  <!-- Photo Gallery -->
+<div class="gallery">
+  <button (click)="startOAuthFlow()">Start Dropbox OAuth</button>
+  <button (click)="loadPhotos()">Load Photos</button>
+  <img *ngFor="let photo of photos" [src]="photo" alt="Gallery Photo" />
+  </div>
+
+  <!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2024 Photo App. All Rights Reserved.</p>
+  </footer>
+  
+  
+  
